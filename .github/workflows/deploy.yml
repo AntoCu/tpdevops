@@ -34,7 +34,7 @@ jobs:
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: angular-tp/dist/angular-tp/browser
+          path: angular-tp/dist/angular-tp
 
   deploy:
     needs: build

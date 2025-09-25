@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./angular-tp
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -42,7 +39,6 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      contents: read
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
